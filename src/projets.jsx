@@ -7,21 +7,25 @@ function Projets({ title, imageSrc, description }){
 
     const handleMouseEnter = () => {
       setHovered(true);
+      console.log("hovered");
     };
   
     const handleMouseLeave = () => {
       setHovered(false);
+      console.log("NO hovered");
     };
+
+   
   
     const circleStyle = {
       width: "250px",
       height: "250px",
-      borderRadius: "50%",
       overflow: "hidden",
+      borderRadius: "50%",
       cursor: "pointer",
-      position: "relative",
-      transition: "all 0.3s",
-      margin: "0 auto",
+      position: "absolute",
+      transition: "",
+      margin: " auto",
       boxshadow: "9px 9px 18px #110e13, -9px -9px 18px #433a4d"
     };
   
@@ -33,13 +37,12 @@ function Projets({ title, imageSrc, description }){
   
     const cardStyle = {
       
-      width: "500px",
+      width: "300px",
       height: "600px",
       backgroundColor: "white",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
+      position: "relative",
+      
+      transform: "translate(0%, 0%)",
       padding: "10px",
       display: "flex",
       flexDirection: "column",
@@ -47,9 +50,10 @@ function Projets({ title, imageSrc, description }){
       justifyContent: "center",
       borderRadius: "10px",
       boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.3)",
-      transition: "all 1s",
+      transition: "",
       opacity: hovered ? "1" : "0",
       visibility: hovered ? "visible" : "hidden"
+      
     };
   
     const titleStyle = {
@@ -69,23 +73,23 @@ function Projets({ title, imageSrc, description }){
       height: "500px",
       borderRadius: "30px",
       backgroundColor: '#D9D9D9',
-      position: "relative",
-      top: "50%",
-      left: "45%",
-      transform: "translate(-50%, -50%)",
+      position: "absolute",
+      transform: "translate(0%, 0%)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       padding: "10px",
       boxShadow: "9px 9px 18px #110e13, -9px -9px 18px #433a4d",
-      transition: "all 1s",
+      transition: " ",
       opacity: hovered ? "1" : "0",
       visibility: hovered ? "visible" : "hidden",
-      
     };
+
+    
   
     return (
+     
       <div
         style={hovered ? circleToCardStyle : circleStyle}
         onMouseEnter={handleMouseEnter}
@@ -112,6 +116,7 @@ function Projets({ title, imageSrc, description }){
             </div>
         )}
         </div>
+        
     )
 }
 export default Projets;
