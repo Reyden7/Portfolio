@@ -8,12 +8,12 @@ function Projets({ title, imageSrc, description }){
 
     const handleMouseEnter = () => {
       setHovered(true);
-      console.log("hovered");
+     
     };
   
     const handleMouseLeave = () => {
       setHovered(false);
-      console.log("NO hovered");
+      
     };
 
    
@@ -42,7 +42,6 @@ function Projets({ title, imageSrc, description }){
       height: "600px",
       backgroundColor: "white",
       position: "relative",
-      
       transform: "translate(0%, 0%)",
       padding: "10px",
       display: "flex",
@@ -75,7 +74,7 @@ function Projets({ title, imageSrc, description }){
       borderRadius: "30px",
       backgroundColor: '#D9D9D9',
       position: "absolute",
-      transform: "translate(0%, 0%)",
+      transform: "translate(-5%, -15%)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -97,10 +96,10 @@ function Projets({ title, imageSrc, description }){
         onMouseLeave={handleMouseLeave}
       >
         {hovered ? (
-          <div   style={{ height: "400px", marginBottom: "10px" }}>
+          <div   style={{ height: "400px", marginBottom: "5px" }}>
             <img className=" rounded-2xl"
               src={imageSrc}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              style={{ width: "100%", height: "100%", objectFit: "fill" }}
             />
           </div>
         ) : (

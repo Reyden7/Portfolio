@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import Navbare from '../navbar';
 import Profile from '../profile';
 import CV from '../moncv';
 import Arrow from '../arrow';
-import Avatar from '../img/Avatar.png';
 import Projets from '../mesprojet';
+import Homeanime from '../homeanime';
 
-export default function home() {
+export default function Home() {
+
+  const [backgroundColor, setBackgroundColor] = useState('#2A2430');
 
   return (
-    <div>
+    <div style={{backgroundColor}}><Homeanime setBackgroundColor={setBackgroundColor} />
       <div className=' flex h-screen'>
         <div className=' flex-1 ' >
         <Profile/>
