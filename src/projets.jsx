@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AOS from 'aos';
 
 
 function Projets({ title, imageSrc, description }){
@@ -24,7 +25,7 @@ function Projets({ title, imageSrc, description }){
       borderRadius: "50%",
       cursor: "pointer",
       position: "absolute",
-      transition: "",
+      transition: "all 0.5s ease-in-out",
       margin: " auto",
       boxshadow: "9px 9px 18px #110e13, -9px -9px 18px #433a4d"
     };
@@ -81,7 +82,7 @@ function Projets({ title, imageSrc, description }){
       justifyContent: "center",
       padding: "10px",
       boxShadow: "9px 9px 18px #110e13, -9px -9px 18px #433a4d",
-      transition: " ",
+      transition: "all 0.5s ease-in-out",
       opacity: hovered ? "1" : "0",
       visibility: hovered ? "visible" : "hidden",
     };
@@ -90,13 +91,13 @@ function Projets({ title, imageSrc, description }){
   
     return (
      
-      <div
+      <div data-aos="fade-up"
         style={hovered ? circleToCardStyle : circleStyle}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {hovered ? (
-          <div  style={{ height: "400px", marginBottom: "10px" }}>
+          <div   style={{ height: "400px", marginBottom: "10px" }}>
             <img className=" rounded-2xl"
               src={imageSrc}
               style={{ width: "100%", height: "100%", objectFit: "cover" }}

@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "animejs": "^3.2.1",
+    "aos": "^2.3.4",
     "feather-icons": "^4.29.0",
     "file-saver": "^2.0.5",
     "gulp": "^4.0.2",
