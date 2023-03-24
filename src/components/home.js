@@ -5,17 +5,20 @@ import CV from '../moncv';
 import Arrow from '../arrow';
 import Projets from '../mesprojet';
 import Homeanime from '../homeanime';
+import '../scrollbare.css';
 
 export default function Home() {
 
-  const [backgroundColor, setBackgroundColor] = useState('#2A2430');
+  
 
   return (
-    <div style={{backgroundColor}}><Homeanime setBackgroundColor={setBackgroundColor} />
+    <div className="content">
+      <Homeanime/>
       <div className=' flex h-screen'>
         <div className=' flex-1 ' >
         <Profile/>
-
+       
+        
         </div>
 
         <div className='flex-1 -ml-96'>

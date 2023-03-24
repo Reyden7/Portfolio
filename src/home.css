@@ -1,12 +1,12 @@
 
-body {
-    height: 2000px;
-}
 
 body{
-    background-color: #2A2430;
+    background-image: linear-gradient(to bottom, #18141b  0% 1045px, #4e4755  100% 50%);
+    height: 2000px;
   }
 
-.body-second{
-    background-color: #1e4ea7;
+
+
+.content {
+    min-height: 2000px;
 }
