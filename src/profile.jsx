@@ -28,7 +28,7 @@ function Profile() {
                <div className="relative overflow-hidden">
 
                 <div className={trapezoidClass}> 
-                  <img   className={avatarClasse} src={Avatar}></img>
+                  <img    className={avatarClasse} src={Avatar}></img>
                     <div className={trapez2Class}>
                       <div className={trapez3Class}></div>
                 </div>

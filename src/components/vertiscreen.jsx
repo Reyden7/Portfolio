@@ -11,6 +11,11 @@ import Img7 from "../img/ds7.jpg"
 import Img8 from "../img/ds8.jpg"
 import Img9 from "../img/ds9.jpg"
 import Img10 from "../img/ds10.jpg"
+import AOS from 'aos';
+
+ // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function vertiscreen() {
   return (
@@ -20,8 +25,8 @@ export default function vertiscreen() {
        <div className="subtitleV"> Un écran suplémentaire pour votre pc portable</div>
        <div className=" font-openSans italic text justify-center lg:ml-96  sm:ml-12 lg:mr-96  sm:mr-12 mt-28 mb-36"> J'ai eu la chance de recevoir mon premier ordinateur fixe à l'âge de 10 ans, en guise de cadeau d'anniversaire offert par mes parents. Durant mes années de formation en BTS, j'ai continué à utiliser ce même ordinateur sans rencontrer aucun problème particulier. Cependant, les choses ont changé lorsque j'ai entamé mes études post-bac.</div>
    
-       <div className='lg:flex' style={{ justifyContent: 'space-between' }}>
-        <div className='lg:flex-1 lg:ml-24'>
+       <div  className='lg:flex' style={{ justifyContent: 'space-between' }}>
+        <div data-aos="fade-right" className='lg:flex-1 lg:ml-24'>
           <div className="font-openSans titletextV text-center lg:text-left sm:ml-12 lg:mr-96 lg:mt-40 sm:mr-12 mt-16 lg:w-1/2 ">
             Nous sommes en 2008
           </div>
@@ -30,7 +35,7 @@ export default function vertiscreen() {
             En tant que développeur, j'ai rapidement ressenti le besoin d'avoir un second écran pour améliorer mon confort de travail. J'ai alors construit un bureau improvisé où j'ai pu installer un écran fixe, me permettant ainsi de suivre mes cours, travailler chez moi et poursuivre mes projets personnels. C'est d'ailleurs à cette époque que j'ai eu l'idée de créer un jeu Mario sur lequel j'ai travaillé avec passion.
           </div>
         </div>
-        <div className='lg:flex-1 lg:ml-24 mt-24'>
+        <div data-aos="fade-left" className='lg:flex-1 lg:ml-24 mt-24'>
           <div className="font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16">
           2020 : COVID !!
           </div>
@@ -52,7 +57,7 @@ export default function vertiscreen() {
       </div>
 
       <div className='lg:flex'>
-        <div className='lg:flex-1 lg:ml-24 mt-24 '>
+        <div data-aos="fade-up-right" className='lg:flex-1 lg:ml-24 mt-24 '>
             <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 ">
             La carte video
             </div>
@@ -66,7 +71,7 @@ export default function vertiscreen() {
             Après de nombreuses recherches, j'ai finalement trouvé une solution adéquate : une petite carte compatible avec plusieurs dalles de PC portable, qui permet d'alimenter l'écran et de faire passer le flux vidéo par HDMI, VGA ou DVI. Il ne me restait plus qu'à ajouter une alimentation secteur délivrant du 12V, et le tour était joué !
             </div>
         </div>
-        <div className='lg:flex-1 lg:ml-24 mt-24 '>
+        <div data-aos="fade-up-left" className='lg:flex-1 lg:ml-24 mt-24 '>
             <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 image-hover ">
             <img className='imgarondie'  src={Img1} alt="Description de l'image"/>
             </div>
@@ -74,13 +79,13 @@ export default function vertiscreen() {
       </div>
 
       <div className='lg:flex'>
-        <div className='lg:flex-1 lg:ml-24 mt-24 lg:block sm:hidden '>
+        <div data-aos="fade-up-right" className='lg:flex-1 lg:ml-24 mt-24 lg:block sm:hidden '>
               <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 lg:flex">
                 <img className='imgarondie lg:w-96 lg:h-72 lg:mt-20 lg:flex-1 image-hover  '  src={Img3} alt="Description de l'image"/>
                 <img className='imgarondie lg:w-72 lg:flex-1 lg:ml-12 sm:mt-10 image-hover '  src={Img2} alt="Description de l'image"/>
               </div>
           </div>
-          <div className='lg:flex-1 lg:ml-24 mt-24 '>
+          <div data-aos="fade-up-left"  className='lg:flex-1 lg:ml-24 mt-24 '>
         <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 ">
         Le support
         </div>
@@ -109,7 +114,7 @@ export default function vertiscreen() {
           </div>
           </div>
       </div>
-      <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 ">
+      <div data-aos="fade-up" className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 ">
         L'écran seul
         </div>
       <div className='lg:flex'>
@@ -130,28 +135,28 @@ export default function vertiscreen() {
         La finalité
         </div>
       <div className='lg:flex center'>
-            <div className='lg:flex-1 lg:ml-24 lg:mb-36 lg:mt-36 image-hover '>
+            <div data-aos="fade-up" className='lg:flex-1 lg:ml-24 lg:mb-36 lg:mt-36 image-hover '>
                 <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 ">
                   <img className='imgarondie  lg:h-96 lg:w-96'  src={Img6} alt="Description de l'image"/>
                 </div>
             </div>
-            <div className='lg:flex-1 lg:ml-24 lg:mb-36 image-hover  '>
+            <div data-aos="fade-up" className='lg:flex-1 lg:ml-24 lg:mb-36 image-hover  '>
                 <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 ">
                         <img className='imgarondie  lg:h-96 lg:w-96 '  src={Img7} alt="Description de l'image"/>
                 </div>
             </div>
-            <div className='lg:flex-1 lg:ml-24 lg:mb-36 lg:mt-36 image-hover '>
+            <div data-aos="fade-up" className='lg:flex-1 lg:ml-24 lg:mb-36 lg:mt-36 image-hover '>
                 <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 ">
                         <img className='imgarondie  lg:h-96 lg:w-96 '  src={Img8} alt="Description de l'image"/>
                 </div>
             </div>
-            <div className='lg:flex-1 lg:ml-24 lg:mb-36 image-hover  '>
+            <div data-aos="fade-up" className='lg:flex-1 lg:ml-24 lg:mb-36 image-hover  '>
                 <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 ">
                         <img className='imgarondie  lg:h-96 lg:w-96'  src={Img9} alt="Description de l'image"/>
                 </div>
             </div>
-            <div className='lg:flex-1 lg:ml-24 lg:mr-24 lg:mb-36 lg:mt-36 image-hover '>
-            <div className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 ">
+            <div  className='lg:flex-1 lg:ml-24 lg:mr-24 lg:mb-36 lg:mt-36 image-hover '>
+            <div data-aos="fade-up" className=" font-openSans titletextV sm:text-center lg:text-left sm:ml-12 mt-16 mr-10 ">
                     <img className='imgarondie  lg:h-96 lg:w-96 '  src={Img10} alt="Description de l'image"/>
             </div>
         </div>
