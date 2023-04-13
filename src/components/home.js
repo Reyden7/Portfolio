@@ -37,7 +37,10 @@ export default function Home() {
       </div>
       <div className='lg:-mt-80 lg:mb-80 sm:-mt-64 sm:mb-80'><Arrow/></div>
        <div className='relative'><Navbare/></div>
-       <div><Projets/></div>
+       <div className="w-full items-center justify-center">
+          <div className="lg:ml-40 sm:mt-16  lg:ml-0 "><Projets/></div>
+       </div>
+      
        
     </div>
     

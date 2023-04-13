@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importer le composant Link de React Router
 import Projets from './projets'
-import logotest from './img/Avatar.png'
-import TRNLogo from './img/hobbies.png'
-import VertiscreenLogo from './img/projets.png'
-import asuivreLogo from './img/contact_.png'
 import EtabsLogo from './img/logoetabstercer.png'
 import ReviLogo from './img/logoerevi.png'
 import DualscreenLogo from './img/logodualscreen.png'
@@ -33,10 +29,10 @@ function mesprojets(){
       };
    
     return(
-        <div>
+        <div className=''>
         
-            <div id="projets-container"  className=' lg:mt-64 lg:ml-20 lg:flex'>
-                <div className=' lg:flex-1 lg:ml-24 lg:mb-36  lg:mt-16 ' >
+            <div id="projets-container"  className="flex sm:flex-row sm:flex-wrap  lg:mt-72 sm:items-center sm:justify-between  ">
+                <div className='w-full sm:mb-72 md:w-1/3 lg:w-1/4 p-2' >
                     {EtabsLink}
                     <Link to="/etabs" onClick={scrollToTop}>
                     <Projets             
@@ -45,7 +41,7 @@ function mesprojets(){
                         description="Le gestionaire de tablature pour les guitaristes !"/>
                     </Link>
                 </div>
-                <div className='lg:flex-1 lg:ml-24 lg:mb-36  lg:-mt-16'>
+                <div className='w-full sm:mb-72 md:w-1/3 lg:w-1/4 p-2'>
                     <Link to="/revi" onClick={scrollToTop}>
                     <Projets             
                         imageSrc={ReviLogo}
@@ -53,7 +49,7 @@ function mesprojets(){
                         description="Le nouveau site de la juniore agence pour le master REVI"/>
                     </Link>
                 </div>
-                <div className=' lg:flex-1 lg:ml-24 lg:mb-36  lg:mt-16'>
+                <div className='w-full sm:mb-72 md:w-1/3 lg:w-1/4 p-2'>
                     <Link to="/vertiscreen" onClick={scrollToTop}>
                     <Projets             
                         imageSrc={DualscreenLogo}
@@ -61,7 +57,7 @@ function mesprojets(){
                         description="Un système ingénieux de double écran pour ordinateur portable"/>
                     </Link>
                 </div>
-                <div className=' lg:flex-1 lg:ml-24 lg:mb-36  lg:-mt-16'>
+                <div className='w-full sm:mb-72 md:w-1/3 lg:w-1/4 p-2'>
                     <Link to="/a-venir" onClick={scrollToTop}>
                     <Projets             
                         imageSrc={A_venirLogo}

@@ -2,7 +2,7 @@
 
 body{
     background-image: linear-gradient(to bottom, #18141b  0% 1045px, #939097  95% 0%);
-    height: 2000px;
+    
   }
 
 
@@ -10,3 +10,5 @@ body{
 .content {
     min-height: 2000px;
 }
+
+
