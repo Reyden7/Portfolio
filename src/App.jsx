@@ -22,7 +22,7 @@ function App ()	{
       <Route path="/etabs" element={<Etabs/>}></Route>
       <Route path="/revi" element={<Revi/>}></Route>
       <Route path="/vertiscreen" element={<Vertiscreen/>}></Route>
-      <Route path="a-venir" element={<AVenir/>}></Route>
+      <Route path="/a-venir" element={<AVenir/>}></Route>
       <Route  path="*" element={<Home/>} />
     </Routes>
   )
