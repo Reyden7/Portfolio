@@ -1,5 +1,5 @@
 import React from 'react';
-import cvLink from './img/CV.png'
+import cvLink from './img/cv.png'
 import './moncv.css'
 function CV(){
     
