@@ -27,10 +27,8 @@ export default function Home() {
           <div><h1 className='text-gray-50 text-5xl font-mono mt-10 pl-64 subpixel-antialiased'>Quentin c.</h1></div>
           <div><h1 className=' text-red-600 text-xl font-serif mt-10 pl-80 subpixel-antialiased tracking-widest'>Dev front et back end</h1></div>
           <div className=' lg:mt-12 lg:w-5/6 lg:-ml-24 sm:mt-0 sm:w-5/6 sm:text-center  sm:ml-40 sm:p-16 sm:ju'>
-          <p className='text-gray-50 text-xl font-mono mt-10 lg:pl-20  subpixel-antialiased lg:w-auto sm:text-center  lg:ml-0  sm:w-auto sm:mr-0 sm:justify-center '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Nam eget sapien sed quam maximus feugiat at elementum felis. Aenean laoreet sapien</p>
-           <p className='text-gray-50 text-xl font-mono mt-10 lg:pl-72   sm:w-auto  subpixel-antialiased w-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Nam eget sapien sed quam maximus feugiat at elementum felis. Aenean laoreet sapien</p>
+          <p className='text-gray-50 text-xl font-mono mt-10 lg:pl-20  subpixel-antialiased lg:w-auto sm:text-center  lg:ml-0  sm:w-auto sm:mr-0 sm:justify-center '>Je suis un développeur web de 25 ans, passionné par mon métier. Grâce à mes 4 ans d'alternance, j'ai acquis une grande polyvalence dans différents domaines du développement informatique, ce qui me permet de m'adapter facilement à de nouveaux projets.</p>
+           <p className='text-gray-50 text-xl font-mono mt-10 lg:pl-72   sm:w-auto  subpixel-antialiased w-auto'>Je suis également doté d'une grande patience, une qualité qui me permet de travailler avec rigueur et persévérance pour atteindre les objectifs fixés.</p>
             <div className='lg:mt-16 text-right sm:mt-16 lg:text-right sm:text-center ' ><CV/></div>     
           </div>
         </div>
