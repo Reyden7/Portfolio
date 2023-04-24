@@ -19,10 +19,10 @@ function App ()	{
       <Route path="https://reyden7.github.io/Portfolio/competences" element={<Competences/>} ></Route>
       <Route path="https://reyden7.github.io/Portfolio/hobbie" element={<Hobbie/>}></Route>
       <Route path="https://reyden7.github.io/Portfolio/contact" element={<Contact/>}></Route>
-      <Route path="https://reyden7.github.io/Portfolio/etabs" element={<Etabs/>}></Route>
-      <Route path="https://reyden7.github.io/Portfolio/revi" element={<Revi/>}></Route>
-      <Route path="https://reyden7.github.io/Portfolio/vertiscreen" element={<Vertiscreen/>}></Route>
-      <Route path="https://reyden7.github.io/Portfolio/a-venir" element={<AVenir/>}></Route>
+      <Route path="/etabs" element={<Etabs/>}></Route>
+      <Route path="/revi" element={<Revi/>}></Route>
+      <Route path="/vertiscreen" element={<Vertiscreen/>}></Route>
+      <Route path="a-venir" element={<AVenir/>}></Route>
       <Route  path="*" element={<Home/>} />
     </Routes>
   )
