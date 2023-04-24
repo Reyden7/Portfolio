@@ -17,8 +17,8 @@ function App ()	{
       <Route path="/" element={<Home/>}></Route>
       <Route path="/menu" element={<Home/>} ></Route>
       <Route path="/competences" element={<Competences/>} ></Route>
-      <Route path="https://reyden7.github.io/Portfolio/hobbie" element={<Hobbie/>}></Route>
-      <Route path="https://reyden7.github.io/Portfolio/contact" element={<Contact/>}></Route>
+      <Route path="/menu" element={<Hobbie/>}></Route>
+      <Route path="/menu" element={<Contact/>}></Route>
       <Route path="/etabs" element={<Etabs/>}></Route>
       <Route path="/revi" element={<Revi/>}></Route>
       <Route path="/vertiscreen" element={<Vertiscreen/>}></Route>
