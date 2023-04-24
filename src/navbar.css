@@ -5,7 +5,6 @@
   
 @media (min-width: 200px) {  
     .nav {
-        width: 45%;
         background-color: #efeeee;
         box-shadow: 30px 30px 30px 0 rgba(0,0,0,.07);
         list-style-type: none;
@@ -40,11 +39,10 @@
 }
 @media (min-width: 768px) {
     .nav {
-        width: 45%;
-        align-items: center;
+        
+        
         background-color: #efeeee;
         box-shadow: 10px 10px 12px 0 rgba(255, 255, 255, 0.07);
-        border-radius: 50px 50px 50px 50px;
         list-style-type: none;
       }
        
