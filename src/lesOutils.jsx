@@ -33,21 +33,24 @@ const Carousel = () => {
     for(let i=0; i<marqueeElementsDisplayed; i++) {
       marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
     }
-}, []);
+  }, []);
+
+  const imageSize = `calc(100% / ${images.length})`; // Définit la taille de l'image en pourcentage en fonction du nombre d'images
+
   return (
     <div className="container mt-28 mb-28 w-auto" data-aos="fade-up">
       <div className="row">
         <div className="marquee align-content-center">
-          <ul className="marquee-content " style={{ width: `${images.length * 15}%` }}>
+          <ul className="marquee-content" style={{ width: `${images.length * 15}%` }}>
             {images.map((image, index) => (
-              <li key={index} style={{ width: `${100 / images.length}%` }}>
+              <li key={index} style={{ width: imageSize }}>
                 <a title={image.title}>
                   <img
                     alt={image.title}
                     src={image.src}
                     width="100%"
                     aria-hidden="true"
-                    className="w-100"
+                    className="w-100 imgsize"
                   />
                 </a>
               </li>
