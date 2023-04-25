@@ -35,8 +35,17 @@ const Carousel = () => {
     }
   }, []);
 
-  const imageSize = `calc(100% / ${images.length})`; // Définit la taille de l'image en pourcentage en fonction du nombre d'images
+  const isMobile = window.innerWidth <= 768; // Vérifie si la largeur de l'écran est inférieure ou égale à 768px (taille typique des téléphones)
+  var imageSize = '';
+if (isMobile) {
+   imageSize = `calc(250% / ${images.length})`; // Définit la taille de l'image en pourcentage en fonction du nombre d'images
 
+} else {
+   imageSize = `calc(90% / ${images.length})`; // Définit la taille de l'image en pourcentage en fonction du nombre d'images
+
+}
+
+ 
   return (
     <div className="container mt-28 mb-28 w-auto" data-aos="fade-up">
       <div className="row">
