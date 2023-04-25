@@ -38,7 +38,7 @@ const Carousel = () => {
     <div className="container mt-28 mb-28 w-auto" data-aos="fade-up">
       <div className="row">
         <div className="marquee align-content-center">
-          <ul className="marquee-content" style={{ width: `${images.length * 15}%` }}>
+          <ul className="marquee-content " style={{ width: `${images.length * 15}%` }}>
             {images.map((image, index) => (
               <li key={index} style={{ width: `${100 / images.length}%` }}>
                 <a title={image.title}>
