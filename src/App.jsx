@@ -10,6 +10,7 @@ import Etabs from "./components/etabs";
 import Revi from "./components/revi";
 import Vertiscreen from "./components/vertiscreen";
 import AVenir from "./components/a-venir";
+import PreLoader from "./components/preloader";
 
 function App() {
   return (

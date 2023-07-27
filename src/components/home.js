@@ -7,10 +7,12 @@ import Projets from "../mesprojet";
 import Homeanime from "../homeanime";
 import "../scrollbare.css";
 import Typed from "react-typed";
+import PreLoader from "./preloader";
 
 export default function Home() {
   return (
     <div className="content">
+      <PreLoader />
       <div className=" flex h-screen">
         <div className=" lg:flex-1 sm:hidden lg:block">
           <Profile />
@@ -42,8 +44,8 @@ export default function Home() {
                   "Curieux",
                   "Moi",
                 ]}
-                typeSpeed={150}
-                backSpeed={100}
+                typeSpeed={70}
+                backSpeed={30}
                 loop
               />
             </div>
