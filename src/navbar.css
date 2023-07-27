@@ -5,7 +5,7 @@
   
 @media (min-width: 200px) {  
     .nav {
-        background-color: #efeeee;
+        background-color: #efeeee00;
         box-shadow: 30px 30px 30px 0 rgba(0,0,0,.07);
         list-style-type: none;
       }
@@ -22,8 +22,9 @@
     .nav a :not(.logo) {
         margin: 1rem;
         padding: 0.5rem ;
-        border: 10px solid rgba(255,255,255,.3);
-        box-shadow: 4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgb(224, 224, 224);
+        border: 10px solid rgb(255, 255, 255);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.247), -4px -4px 6px rgba(255, 255, 255, 0.301);
+        background-color: rgb(255, 255, 255);
         border-radius:  20px 20px 20px 20px;
         font-family: 'Roboto', sans-serif;
         cursor: pointer;
@@ -41,7 +42,7 @@
     .nav {
         
         
-        background-color: #efeeee;
+        background-color: #efeeee00;
         box-shadow: 10px 10px 12px 0 rgba(255, 255, 255, 0.07);
         list-style-type: none;
       }
@@ -59,8 +60,10 @@
         
         margin: 2rem;
         padding: 0.5rem ;
-        border: 10px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgb(255, 255, 255);
+        border: 15px solid rgb(255, 255, 255);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.247), -4px -4px 6px rgba(255, 255, 255, 0.301);
+        background-color: rgb(255, 255, 255);
+        
         border-radius:  25px 25px 25px 25px;;
         font-family: 'Roboto', sans-serif;
         cursor: pointer;
@@ -78,7 +81,7 @@
 @media (min-width: 976px) { 
     .nav {
         width: 20%;
-        background-color: #efeeee;
+        background-color: #efeeee00;
         box-shadow: 10px 10px 12px 0 rgba(0,0,0,.07);
         border-radius: 50px 50px 50px 50px;
         list-style-type: none;
@@ -92,8 +95,9 @@
     .nav a :not(.logo) {
         margin: 2rem;
         padding: 0.5rem ;
-        border: 10px solid rgba(255,255,255,.3);
-        box-shadow: 4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1);
+        border: 15px solid rgb(255, 255, 255);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.247), -4px -4px 6px rgba(255, 255, 255, 0.301);
+        background-color: rgb(255, 255, 255);
         border-radius:  25px 25px 25px 25px;;
         font-family: 'Roboto', sans-serif;
         cursor: pointer;
