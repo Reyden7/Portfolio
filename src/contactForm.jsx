@@ -27,7 +27,7 @@ function ContactForm() {
           console.log(error.text);
         }
       );
-  };
+  }; //formulaire de contact
   return (
     <div className="w-full center sm:mb-24 sm:p-5 sm:backdrop-blur-sm sm:bg-white/10  sm:rounded sm:rounded-xl lg:backdrop-blur-none lg:bg-transparent">
       <div className="lg:ml-96 lg:-mt-32 ">
