@@ -110,23 +110,24 @@
 @media (min-width: 1910px) { 
     .nav {
         width: 30%;
-        background-color: #efeeee;
-        box-shadow: 10px 10px 12px 0 rgba(0,0,0,.07);
+        background-color: #efeeee00;
+        box-shadow: 10px 10px 12px 0 rgba(0,0,0,.00);
         border-radius: 50px 50px 50px 50px;
         list-style-type: none;
       }
        
     .nav a.logo {
-        color: dimgray;
-        text-shadow: 2px 2px 4px rgba(0,0,0,.3), -2px -2px 4px rgba(255,255,255,1);
+        color: #efeeee;
+        text-shadow: 2px 2px 4px #efeeee, -2px -2px 4px #efeeee;
         }
       
     .nav a :not(.logo) {
         margin: 2rem;
         padding: 0.5rem ;
-        border: 10px solid rgba(255,255,255,.3);
-        box-shadow: 4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1);
+        border: 10px solid rgb(255, 255, 255);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.247), -4px -4px 6px rgba(255, 255, 255, 0.301);
         border-radius:  25px 25px 25px 25px;;
+        background-color: #ffffff;
         font-family: 'Roboto', sans-serif;
         cursor: pointer;
         transition: color 0.2s ease-out, transform 0.2s ease-out;
