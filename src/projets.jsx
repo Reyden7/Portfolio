@@ -84,6 +84,7 @@ function Projets({ title, imageSrc, description }) {
     alignItems: "center",
     justifyContent: "center",
     padding: "10px",
+    transition: "all 0.5s ease-in-out",
   };
 
   return (
