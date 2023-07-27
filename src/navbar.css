@@ -124,7 +124,7 @@
     .nav a :not(.logo) {
         margin: 2rem;
         padding: 0.5rem ;
-        border: 10px solid rgb(255, 255, 255);
+        border: 15px solid rgb(255, 255, 255);
         box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.247), -4px -4px 6px rgba(255, 255, 255, 0.301);
         border-radius:  25px 25px 25px 25px;;
         background-color: #ffffff;
@@ -135,7 +135,7 @@
         }
       
     .nav a :not(.logo):hover {
-        transform: scale(1.05);
-        box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1);
+        transform: scale(1.1);
+        box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgb(190, 190, 190);
         }
 }
