@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "@material-ui/core";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init();
 
@@ -27,9 +27,8 @@ function Projets({ title, imageSrc, description }) {
     transition: "all 0.5s ease-in-out",
     margin: "auto",
     marginBottom: isMobile ? "-14rem" : "0rem",
-    backgroundColor: "grey",
-    backgroundImage:
-      "linear-gradient(to bottom, #939097 0%, #18141b 100%)",
+    backgroundColor: "white",
+    backgroundImage: "white",
     boxShadow:
       "5px 5px 10px rgba(0, 0, 0, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1)",
     display: "flex",
@@ -77,7 +76,7 @@ function Projets({ title, imageSrc, description }) {
     width: "300px",
     height: "500px",
     borderRadius: "30px",
-    backgroundColor: "#D9D9D9",
+    backgroundColor: "white",
     position: isMobile ? "relative" : "absolute",
     transform: isMobile ? "none" : "translate(-5%, -15%)",
     display: "flex",
@@ -85,41 +84,48 @@ function Projets({ title, imageSrc, description }) {
     alignItems: "center",
     justifyContent: "center",
     padding: "10px",
-    boxShadow: "9px 9px",
-    };
+  };
 
-    
-  
-    return (
-     
-      <div data-aos="fade-up" className=""
-        style={hovered ? circleToCardStyle : circleStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        {hovered ? (
-          <div style={{ height: "400px", marginBottom: "5px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+  return (
+    <div
+      data-aos="fade-up"
+      className=""
+      style={hovered ? circleToCardStyle : circleStyle}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {hovered ? (
+        <div
+          style={{
+            height: "400px",
+            marginBottom: "5px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <img
             className="rounded-2xl"
             src={imageSrc}
-            style={{ maxWidth: "150%", maxHeight: "150%", objectFit: "fill", objectPosition: "center",  transition: "all 0.5s ease-in-out" }}
+            style={{
+              maxWidth: "150%",
+              maxHeight: "150%",
+              objectFit: "fill",
+              objectPosition: "center",
+              transition: "all 0.5s ease-in-out",
+            }}
           />
         </div>
-        ) : (
-          <img
-            src={imageSrc}
-            alt={title}
-            style={imageStyle}
-          />
-        )}
-        {hovered && (
-          <div className=" lg:-mt-7 "  style={{ flex: "1", textAlign: "center" }}>
-            <h2 style={titleStyle}>{title}</h2>
-            <p style={descriptionStyle}>{description}</p>
-            </div>
-        )}
+      ) : (
+        <img src={imageSrc} alt={title} style={imageStyle} />
+      )}
+      {hovered && (
+        <div className=" lg:-mt-7 " style={{ flex: "1", textAlign: "center" }}>
+          <h2 style={titleStyle}>{title}</h2>
+          <p style={descriptionStyle}>{description}</p>
         </div>
-        
-    )
+      )}
+    </div>
+  );
 }
 export default Projets;
