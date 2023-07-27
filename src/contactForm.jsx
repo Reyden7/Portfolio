@@ -30,7 +30,7 @@ function ContactForm() {
   };
   return (
     <div className="w-full center sm:mb-24 sm:p-5 sm:backdrop-blur-sm sm:bg-white/10  sm:rounded sm:rounded-xl lg:backdrop-blur-none lg:bg-transparent">
-      <div className="lg:ml-96 lg:-mt-24 ">
+      <div className="lg:ml-96 lg:-mt-32 ">
         <div className="">
           <section className="text-gray-700 body-font w-full">
             <div className="w-full lg:mt-20">
@@ -101,7 +101,7 @@ function ContactForm() {
                         ></textarea>
                       </div>
                     </div>
-                    <div className="p-2 w-full lg:mb-12 ">
+                    <div className="p-2 w-full  ">
                       <button
                         type="submit"
                         className=" lg:w-1/12  text-black text-3xl mx-auto text-whit bg-gray-300 border-0 py-2 px-8 focus:outline-none hover:bg-red-800 rounded text-lg"

@@ -100,36 +100,39 @@ export default function contact() {
         </h1>
       </div>
       <div>
-        <div className=" bottom-0 relative lg:mt-34 lg:block sm:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1920"
-            height="585"
-            viewBox="0 0 1920 585"
-            fill="none"
-          >
-            <path
-              d="M0 0.5L125.5 40L422 125.5L677 94.5L915.5 182L1138 105L1248 182L1446.5 125.5L1684.5 182L1920 58.5V585H0V0.5Z"
-              fill="#1A1024"
-            />
-          </svg>
+        <div className=" lg:relative lg:bottom-0 lg:inset-x-0">
+          <div className=" bottom-0 relative  lg:block sm:hidden    ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1920"
+              height="585"
+              viewBox="0 0 1920 585"
+              fill="none"
+            >
+              <path
+                d="M0 0.5L125.5 40L422 125.5L677 94.5L915.5 182L1138 105L1248 182L1446.5 125.5L1684.5 182L1920 58.5V585H0V0.5Z"
+                fill="#1A1024"
+              />
+            </svg>
+          </div>
+          <div className=" z-10 absolute lg:-mt-96 lg:block sm:hidden">
+            <svg
+              className="lg:-mt-48"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1920"
+              height="188"
+              viewBox="0 0 1920 188"
+              fill="none"
+            >
+              <path
+                d="M0 0.5L422 107.941L677 91.7113L915.5 170.5L1138 97.2083L1248 170.5L1446.5 107.941L1684.5 170.5L1920 50.5V66L1684.5 187.5L1446.5 124L1248 187.5L1138 107.941L915.5 187.5L677 107.941L422 124L0 18V0.5Z"
+                fill="#352C3E"
+              />
+            </svg>
+          </div>
         </div>
-        <div className=" z-10 absolute lg:-mt-96 lg:block sm:hidden">
-          <svg
-            className="lg:-mt-48"
-            xmlns="http://www.w3.org/2000/svg"
-            width="1920"
-            height="188"
-            viewBox="0 0 1920 188"
-            fill="none"
-          >
-            <path
-              d="M0 0.5L422 107.941L677 91.7113L915.5 170.5L1138 97.2083L1248 170.5L1446.5 107.941L1684.5 170.5L1920 50.5V66L1684.5 187.5L1446.5 124L1248 187.5L1138 107.941L915.5 187.5L677 107.941L422 124L0 18V0.5Z"
-              fill="#352C3E"
-            />
-          </svg>
-        </div>
-        <div className="absolute lg:-mt-96 w-full sm:mt-16">
+
+        <div className="lg:absolute lg:-mt-96 w-full sm:mt-16">
           <ContactForm />
         </div>
       </div>
