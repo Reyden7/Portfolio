@@ -36,7 +36,7 @@
     
     .trapezoid-transformed {
       background-clip: padding-box;
-      border-bottom: 30vh solid #D9D9D9;
+      border-bottom: 30vh solid #cfcfcf;
       border-left: 0 solid transparent;
       border-right: 7vw solid transparent;
       
@@ -74,6 +74,7 @@
       width:17rem ;
       transition:  0.5s ease-out;
       
+      
     }
   
     .avatar-transformed{
@@ -82,6 +83,8 @@
       margin-left: 2rem;
       width: 14rem  ; 
       transition:  0.5s ease-out;
+      
+      
       
       
       
